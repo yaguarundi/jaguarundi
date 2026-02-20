@@ -6,9 +6,9 @@
     <title>jaguarundi.cat - El gat llúdriga</title>
     <style>
         body {
-            background-color: #d8824f; /* Custom background color */
-            color: #6a2f0d; /* Custom text color */
-            font-family: "Helvetica", Arial, sans-serif; /* Helvetica font */
+            background-color: #d8824f;
+            color: #6a2f0d;
+            font-family: "Helvetica", Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 40px 20px;
@@ -28,17 +28,16 @@
         }
 
         p {
-            text-align: justify; /* Justified paragraphs */
+            text-align: justify;
             margin-bottom: 20px;
         }
 
-        /* Image wrapping classes */
         .img-left {
             float: left;
             margin: 5px 20px 15px 0;
             max-width: 300px;
-            border-radius: 8px; /* Optional: adds slightly rounded corners */
-            border: 2px solid #6a2f0d; /* Matches your text color */
+            border-radius: 8px;
+            border: 2px solid #6a2f0d;
         }
 
         .img-right {
@@ -51,17 +50,16 @@
 
         /* Container to center both the text and the GIF together */
         .gif-container {
-            text-align: center; /* Centers the "Mew!" text */
+            text-align: center;
             margin: 40px auto 20px auto; 
             width: fit-content;
         }
 
-        /* The "Mew!" text styling */
         .gif-text {
             font-size: 2.2em; /* Larger than paragraphs, smaller than the H1 */
             font-weight: bold;
-            color: #6a2f0d; /* Matches your site's text color */
-            margin: 0 0 5px 0; /* Adds a little breathing room below the text */
+            color: #6a2f0d;
+            margin: 0 0 5px 0;
         }
 
         /* The GIF styling */
@@ -72,11 +70,32 @@
             border: 2px solid #6a2f0d;
         }
 
-        /* Clears the float so the layout doesn't break at the bottom */
         .clearfix::after {
             content: "";
             clear: both;
             display: table;
+            
+        }
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px; 
+            border-top: 2px solid #6a2f0d;
+        }
+
+        .linktree-icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #6a2f0d;
+            mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linktree.svg') no-repeat center / contain;
+            -webkit-mask: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linktree.svg') no-repeat center / contain;
+            
+            transition: opacity 0.3s ease;
+        }
+
+        .linktree-icon:hover {
+            opacity: 0.7; 
         }
     </style>
 </head>
@@ -100,8 +119,14 @@
 <div class="gif-container">
             <h2 class="overlay-text">Mew!</h2>
             <img src="Jag goes mew.gif" alt="Animació d'un jaguarundi" class="img-center">
+<div class="footer">
+            <a href="https://links.yaguarundi.cat" target="_blank" rel="noopener noreferrer" title="Links.">
+                <span class="linktree-icon"></span>
+            </a>
+        </div>
         </div>
 
 </body>
 
 </html>
+
